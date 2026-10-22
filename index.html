@@ -215,8 +215,8 @@ function delP(id){S.prods=S.prods.filter(function(p){return p.id!==id});tab("pro
 renderShop();
 </script>
 <script>
-var SUPABASE_URL="COLE_AQUI_A_PROJECT_URL";
-var SUPABASE_KEY="COLE_AQUI_A_ANON_KEY";
+var SUPABASE_URL="https://zvlrutezivyhitxnpcjo.supabase.co";
+var SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp2bHJ1dGV6aXZ5aGl0eG5wY2pvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI2NzYxOTMsImV4cCI6MjEwODI1MjE5M30.pnheXpgWw-EsS8CIlpH_z8QZbLNfs1yQmV57p8ri8rA";
 var sb=null,isAdmin=false;
 function userClick(){if(user){if(confirm("Sair da conta?")){sb.auth.signOut().then(function(){location.reload()})}}else openM("mLogin")}
 async function loadAll(){
